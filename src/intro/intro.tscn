@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://d3l55108fvlj2"]
+
+[ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_0tdaw"]
+[ext_resource type="Script" uid="uid://k4seea4tlsu4" path="res://src/intro/info_controller.gd" id="2_txmmr"]
+
+[node name="Intro" type="Node2D" unique_id=229911188]
+script = ExtResource("1_0tdaw")
+metadata/_custom_type_script = "uid://da0xnfi2i7ixy"
+
+[node name="IntroController" type="Node" parent="." unique_id=1894972692]
+script = ExtResource("2_txmmr")
+metadata/_custom_type_script = "uid://k4seea4tlsu4"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1842538394]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=588931583]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1812396138]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "INTRO"

@@ -4,6 +4,8 @@ class_name ModulManager extends Node
 
 @onready var module_root = $ModuleRoot
 
+static var singleton
+
 var _module_mapping: Dictionary[String, ModulInfo]
 var _current_module: Module
 var _current_module_id: String
@@ -11,7 +13,8 @@ var _current_module_id: String
 func _ready() -> void:
 	_module_mapping = {}
 	initialize_module_mapping()
-	load_module("main-menu")
+	load_module("intro")
+	singleton = self
 	
 func initialize_module_mapping() -> void:
 	for m in modules:
@@ -25,6 +28,7 @@ func load_module(module_id: String) -> void:
 		unload_current_module()
 		var new_module = (_module_mapping.get(module_id) as ModulInfo).scene.instantiate()
 		module_root.add_child(new_module)
+		_current_module = new_module
 		_current_module_id = module_id
 
 func unload_current_module() -> void:

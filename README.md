@@ -26,7 +26,7 @@ resources -> files from external editors
 ```
 
 ## TODO post jam
-- [ ] module loader
+- [x] module loader
     - [ ] intro (logos)
     - [ ] main menu
         - [ ] settings menu (fullscreen, music volume, sfx volume)

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bbwbygqpg0fdq"]
+
+[ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_3mb8q"]
+
+[node name="MainMenu" type="Node2D" unique_id=2143474246]
+script = ExtResource("1_3mb8q")
+metadata/_custom_type_script = "uid://da0xnfi2i7ixy"
+
+[node name="ui" type="CanvasLayer" parent="." unique_id=482831599]
+
+[node name="Label" type="Label" parent="ui" unique_id=962516211]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "MainMenu"

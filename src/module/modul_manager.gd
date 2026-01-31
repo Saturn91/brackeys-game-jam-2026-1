@@ -1,12 +1,12 @@
 class_name ModulManager extends Node
 
-@export var modules: Array[ModulInfo] = []
+@export var modules: Array[ModuleInfo] = []
 
 @onready var module_root = $ModuleRoot
 
 static var singleton
 
-var _module_mapping: Dictionary[String, ModulInfo]
+var _module_mapping: Dictionary[String, ModuleInfo]
 var _current_module: Module
 var _current_module_id: String
 
@@ -26,7 +26,7 @@ func load_module(module_id: String) -> void:
 		Debug.singleton.error("module [" + module_id + "] does not exist")
 	else:
 		unload_current_module()
-		var new_module = (_module_mapping.get(module_id) as ModulInfo).scene.instantiate()
+		var new_module = (_module_mapping.get(module_id) as ModuleInfo).scene.instantiate()
 		module_root.add_child(new_module)
 		_current_module = new_module
 		_current_module_id = module_id

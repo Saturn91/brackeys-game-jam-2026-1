@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ModuleInfo" format=3 uid="uid://d36rkclnctpgj"]
+
+[ext_resource type="Script" uid="uid://cvji2ctgpxin" path="res://src/module/module_info.gd" id="1_upcjf"]
+[ext_resource type="PackedScene" uid="uid://bbwbygqpg0fdq" path="res://src/main-menu/main_menu.tscn" id="1_xsucq"]
+
+[resource]
+script = ExtResource("1_upcjf")
+scene = ExtResource("1_xsucq")
+metadata/_custom_type_script = "uid://cvji2ctgpxin"

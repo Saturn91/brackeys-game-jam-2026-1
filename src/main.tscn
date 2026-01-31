@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://wbv3t0cmsji3"]
 
 [node name="Main" type="Node2D" unique_id=732130935]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1895782801]
+
+[node name="Label" type="Label" parent="UI" unique_id=1688450405]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "HI"

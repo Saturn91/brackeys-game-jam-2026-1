@@ -25,4 +25,15 @@ src -> godot related files
 resources -> files from external editors
 ```
 
+## TODO post jam
+- [ ] module loader
+    - [ ] intro (logos)
+    - [ ] main menu
+        - [ ] settings menu (fullscreen, music volume, sfx volume)
+        - [ ] credits
+    - [ ] game
+- [ ] pause game implementation
+- [ ] level handling
+- [ ] setting save to file handler
+
 > Template created by [saturn91.dev](https://saturn91.dev)

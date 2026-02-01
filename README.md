@@ -35,5 +35,9 @@ resources -> files from external editors
 - [ ] pause game implementation
 - [ ] level handling
 - [ ] setting save to file handler
+- [ ] debug ui messages
+- [ ] debug ui properties (host / webhost)
+- [x] prepare webbuild export
+- [ ] prepare desktop exports
 
 > Template created by [saturn91.dev](https://saturn91.dev)

@@ -27,11 +27,11 @@ resources -> files from external editors
 
 ## TODO post jam
 - [x] module loader
-    - [ ] intro (logos)
-    - [ ] main menu
-        - [ ] settings menu (fullscreen, music volume, sfx volume)
-        - [ ] credits
-    - [ ] game
+	- [ ] intro (logos)
+	- [ ] main menu
+		- [ ] settings menu (fullscreen, music volume, sfx volume)
+		- [ ] credits
+	- [ ] game
 - [ ] pause game implementation
 - [ ] level handling
 - [ ] setting save to file handler

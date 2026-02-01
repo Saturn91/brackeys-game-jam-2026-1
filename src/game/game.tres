@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ModuleInfo" format=3 uid="uid://doia7y6nbfc0a"]
+
+[ext_resource type="Script" uid="uid://cvji2ctgpxin" path="res://src/module/module_info.gd" id="1_cm2my"]
+[ext_resource type="PackedScene" uid="uid://8gipcpubw6e6" path="res://src/game/game.tscn" id="1_t8aud"]
+
+[resource]
+script = ExtResource("1_cm2my")
+id = "game"
+scene = ExtResource("1_t8aud")
+metadata/_custom_type_script = "uid://cvji2ctgpxin"

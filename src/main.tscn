@@ -5,6 +5,9 @@
 [ext_resource type="Script" uid="uid://cvji2ctgpxin" path="res://src/module/module_info.gd" id="2_5q4o7"]
 [ext_resource type="Resource" uid="uid://c7f7n315qu4kh" path="res://src/intro/Intro.tres" id="4_fyndt"]
 [ext_resource type="Resource" uid="uid://d36rkclnctpgj" path="res://src/main-menu/main_menu.tres" id="5_kmhfv"]
+[ext_resource type="Resource" uid="uid://batjp8ux5d7vp" path="res://src/settings-menu/settings_menu.tres" id="6_kmhfv"]
+[ext_resource type="Resource" uid="uid://6uv2sleonprr" path="res://src/credits/credits.tres" id="7_5mrjc"]
+[ext_resource type="Resource" uid="uid://doia7y6nbfc0a" path="res://src/game/game.tres" id="7_rlaii"]
 
 [node name="Main" type="Node2D" unique_id=732130935]
 
@@ -14,7 +17,8 @@ metadata/_custom_type_script = "uid://bf8fle3x61p80"
 
 [node name="ModulManager" type="Node" parent="." unique_id=1966766302]
 script = ExtResource("1_gh0ne")
-modules = Array[ExtResource("2_5q4o7")]([ExtResource("4_fyndt"), ExtResource("5_kmhfv")])
+inital_module = ExtResource("4_fyndt")
+modules = Array[ExtResource("2_5q4o7")]([ExtResource("4_fyndt"), ExtResource("5_kmhfv"), ExtResource("6_kmhfv"), ExtResource("7_5mrjc"), ExtResource("7_rlaii")])
 metadata/_custom_type_script = "uid://capbdq5tj44gi"
 
 [node name="ModuleRoot" type="Node" parent="ModulManager" unique_id=370113605]

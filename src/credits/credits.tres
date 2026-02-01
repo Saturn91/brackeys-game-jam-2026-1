@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ModuleInfo" format=3 uid="uid://6uv2sleonprr"]
+
+[ext_resource type="PackedScene" uid="uid://cl7y7vbteh632" path="res://src/credits/credits.tscn" id="1_ifm6d"]
+[ext_resource type="Script" uid="uid://cvji2ctgpxin" path="res://src/module/module_info.gd" id="1_ip3kd"]
+
+[resource]
+script = ExtResource("1_ip3kd")
+id = "credits"
+scene = ExtResource("1_ifm6d")
+metadata/_custom_type_script = "uid://cvji2ctgpxin"

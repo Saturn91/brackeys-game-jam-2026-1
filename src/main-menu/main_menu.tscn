@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bbwbygqpg0fdq"]
 
 [ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_3mb8q"]
+[ext_resource type="Texture2D" uid="uid://71wg0frxckhr" path="res://resources/logos/brackeysJam.png" id="2_3ar5o"]
+[ext_resource type="Script" uid="uid://dxe0vn5mloagj" path="res://src/main-menu/main_menu_controller.gd" id="2_qp1v6"]
 
 [node name="MainMenu" type="Node2D" unique_id=2143474246]
 script = ExtResource("1_3mb8q")
@@ -8,7 +10,51 @@ metadata/_custom_type_script = "uid://da0xnfi2i7ixy"
 
 [node name="ui" type="CanvasLayer" parent="." unique_id=482831599]
 
-[node name="Label" type="Label" parent="ui" unique_id=962516211]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "MainMenu"
+[node name="Root" type="Control" parent="ui" unique_id=1000181847]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainControls" type="VBoxContainer" parent="ui/Root" unique_id=602392729]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+script = ExtResource("2_qp1v6")
+
+[node name="PlayButton" type="Button" parent="ui/Root/MainControls" unique_id=651405487]
+layout_mode = 2
+text = "Play"
+
+[node name="SettingsButton" type="Button" parent="ui/Root/MainControls" unique_id=480761276]
+layout_mode = 2
+text = "Settings"
+
+[node name="CreditsButton" type="Button" parent="ui/Root/MainControls" unique_id=1423355700]
+layout_mode = 2
+text = "Credits"
+
+[node name="CloseButton" type="Button" parent="ui/Root/MainControls" unique_id=384248036]
+layout_mode = 2
+text = "Close"
+
+[node name="TextureRect" type="TextureRect" parent="ui/Root" unique_id=1589338084]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -170.0
+offset_right = 220.0
+offset_bottom = -16.0
+grow_vertical = 0
+texture = ExtResource("2_3ar5o")
+expand_mode = 1
+stretch_mode = 4

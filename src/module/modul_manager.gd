@@ -1,19 +1,20 @@
 class_name ModulManager extends Node
 
+@export var inital_module: ModuleInfo
 @export var modules: Array[ModuleInfo] = []
 
 @onready var module_root = $ModuleRoot
 
-static var singleton
+static var singleton: ModulManager
 
 var _module_mapping: Dictionary[String, ModuleInfo]
-var _current_module: Module
+var _current_module: Node
 var _current_module_id: String
 
 func _ready() -> void:
 	_module_mapping = {}
 	initialize_module_mapping()
-	load_module("intro")
+	load_module(inital_module.id)
 	singleton = self
 	
 func initialize_module_mapping() -> void:

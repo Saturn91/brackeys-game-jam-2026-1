@@ -38,6 +38,6 @@ resources -> files from external editors
 - [ ] debug ui messages
 - [ ] debug ui properties (host / webhost)
 - [x] prepare webbuild export
-- [ ] prepare desktop exports
+- [x] prepare desktop exports
 
 > Template created by [saturn91.dev](https://saturn91.dev)

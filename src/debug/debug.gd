@@ -2,7 +2,7 @@ class_name Debug extends Node
 
 static var singleton: Debug
 
-@onready var message_parent: Control = $"../UI/MarginContainer/VBoxContainer"
+@onready var message_parent: Control = $"../UI/DebugMessages/VBoxContainer"
 
 var _info_type: DebugMessageType = load("res://src/debug/message_types/info.tres")
 var _warning_type: DebugMessageType = load("res://src/debug/message_types/warning.tres")

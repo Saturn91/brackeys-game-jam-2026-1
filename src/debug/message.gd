@@ -7,6 +7,11 @@ class_name DebugMessage extends ColorRect
 @onready var timer: Timer = $ClearTimer
 
 func init(msg: String, type: DebugMessageType) -> void:
+	# happens at the beginning...
+	if !label:
+		queue_free()
+		return
+	
 	label.text = msg
 	icon.texture = type.icon
 	color = type.color

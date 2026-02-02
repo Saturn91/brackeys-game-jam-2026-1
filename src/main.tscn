@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bf8fle3x61p80" path="res://src/debug/debug.gd" id="1_3cfgd"]
 [ext_resource type="Script" uid="uid://capbdq5tj44gi" path="res://src/module/modul_manager.gd" id="1_gh0ne"]
+[ext_resource type="Script" uid="uid://dh8pdmktp1gku" path="res://src/debug/debug-properties/debug_properties.gd" id="1_mgm53"]
 [ext_resource type="Script" uid="uid://cvji2ctgpxin" path="res://src/module/module_info.gd" id="2_5q4o7"]
 [ext_resource type="Script" uid="uid://wcvouw7dek2n" path="res://src/settings-manager/settings_manager.gd" id="2_kf8lf"]
 [ext_resource type="Resource" uid="uid://c7f7n315qu4kh" path="res://src/intro/Intro.tres" id="4_fyndt"]
@@ -9,23 +10,9 @@
 [ext_resource type="Resource" uid="uid://batjp8ux5d7vp" path="res://src/settings-menu/settings_menu.tres" id="6_kmhfv"]
 [ext_resource type="Resource" uid="uid://6uv2sleonprr" path="res://src/credits/credits.tres" id="7_5mrjc"]
 [ext_resource type="Resource" uid="uid://doia7y6nbfc0a" path="res://src/game/game.tres" id="7_rlaii"]
+[ext_resource type="Script" uid="uid://bc6k7x63oamaq" path="res://src/debug/debug-properties/fps_counter.gd" id="11_uewes"]
 
 [node name="Main" type="Node2D" unique_id=732130935]
-
-[node name="UI" type="CanvasLayer" parent="." unique_id=780290207]
-
-[node name="MarginContainer" type="MarginContainer" parent="UI" unique_id=934068952]
-anchors_preset = 9
-anchor_bottom = 1.0
-grow_vertical = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_bottom = 16
-
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/MarginContainer" unique_id=1187226523]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
 
 [node name="Debug" type="Node" parent="." unique_id=314416683]
 script = ExtResource("1_3cfgd")
@@ -42,3 +29,34 @@ modules = Array[ExtResource("2_5q4o7")]([ExtResource("4_fyndt"), ExtResource("5_
 metadata/_custom_type_script = "uid://capbdq5tj44gi"
 
 [node name="ModuleRoot" type="Node" parent="ModulManager" unique_id=370113605]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=780290207]
+
+[node name="DebugProperties" type="MarginContainer" parent="UI" unique_id=609332777]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_bottom = 8
+script = ExtResource("1_mgm53")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/DebugProperties" unique_id=421585193]
+layout_mode = 2
+
+[node name="FPSCounter" type="Label" parent="UI/DebugProperties/VBoxContainer" unique_id=717308387]
+layout_mode = 2
+script = ExtResource("11_uewes")
+metadata/_custom_type_script = "uid://bc6k7x63oamaq"
+
+[node name="DebugMessages" type="MarginContainer" parent="UI" unique_id=934068952]
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/DebugMessages" unique_id=1187226523]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0

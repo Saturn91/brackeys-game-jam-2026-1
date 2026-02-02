@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://cl7y7vbteh632"]
 
-[node name="Credits" type="Node2D" unique_id=1190649788]
+[ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_4l73t"]
+
+[node name="Credits" type="Node2D" unique_id=724303317]
+script = ExtResource("1_4l73t")
+metadata/_custom_type_script = "uid://da0xnfi2i7ixy"

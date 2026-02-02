@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bf8fle3x61p80" path="res://src/debug/debug.gd" id="1_3cfgd"]
 [ext_resource type="Script" uid="uid://capbdq5tj44gi" path="res://src/module/modul_manager.gd" id="1_gh0ne"]
 [ext_resource type="Script" uid="uid://cvji2ctgpxin" path="res://src/module/module_info.gd" id="2_5q4o7"]
+[ext_resource type="Script" uid="uid://wcvouw7dek2n" path="res://src/settings-manager/settings_manager.gd" id="2_kf8lf"]
 [ext_resource type="Resource" uid="uid://c7f7n315qu4kh" path="res://src/intro/Intro.tres" id="4_fyndt"]
 [ext_resource type="Resource" uid="uid://d36rkclnctpgj" path="res://src/main-menu/main_menu.tres" id="5_kmhfv"]
 [ext_resource type="Resource" uid="uid://batjp8ux5d7vp" path="res://src/settings-menu/settings_menu.tres" id="6_kmhfv"]
@@ -14,6 +15,10 @@
 [node name="Debug" type="Node" parent="." unique_id=314416683]
 script = ExtResource("1_3cfgd")
 metadata/_custom_type_script = "uid://bf8fle3x61p80"
+
+[node name="SettingsManager" type="Node" parent="." unique_id=87731887]
+script = ExtResource("2_kf8lf")
+metadata/_custom_type_script = "uid://wcvouw7dek2n"
 
 [node name="ModulManager" type="Node" parent="." unique_id=1966766302]
 script = ExtResource("1_gh0ne")

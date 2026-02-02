@@ -27,11 +27,17 @@ func load_module(module_id: String) -> void:
 		Debug.singleton.error("module [" + module_id + "] does not exist")
 	else:
 		unload_current_module()
-		var new_module = (_module_mapping.get(module_id) as ModuleInfo).scene.instantiate()
-		module_root.add_child(new_module)
-		_current_module = new_module
-		_current_module_id = module_id
+		_instantiate_module(module_id)
 
 func unload_current_module() -> void:
 	if _current_module:
 		_current_module.unload()
+		
+func _instantiate_module(module_id) -> void:
+	var new_module = (_module_mapping.get(module_id) as ModuleInfo).scene.instantiate()
+	if !new_module is Module:
+		Debug.singleton.warn(module_id + ": has no attached Module script!")
+	
+	module_root.add_child(new_module)
+	_current_module = new_module
+	_current_module_id = module_id

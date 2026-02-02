@@ -1,10 +1,78 @@
 [gd_scene format=3 uid="uid://kc56a8k8g4nu"]
 
-[node name="SettingsMenu" type="Node2D" unique_id=1784265247]
+[ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_0dtj6"]
+[ext_resource type="Script" uid="uid://do5dkp7h1mhkf" path="res://src/settings-menu/settings_menu_controller.gd" id="2_yc5u7"]
+
+[node name="SettingsMenu" type="Node2D" unique_id=1565746903]
+script = ExtResource("1_0dtj6")
+metadata/_custom_type_script = "uid://da0xnfi2i7ixy"
+
+[node name="SettingsMenuController" type="Node" parent="." unique_id=786870594]
+script = ExtResource("2_yc5u7")
+metadata/_custom_type_script = "uid://do5dkp7h1mhkf"
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=138652352]
 
-[node name="Label" type="Label" parent="UI" unique_id=582168437]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Settings menu"
+[node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=283765815]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="Title" type="Label" parent="UI/VBoxContainer" unique_id=1294563751]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Settings Menu"
+
+[node name="Body" type="HBoxContainer" parent="UI/VBoxContainer" unique_id=1928343105]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Labels" type="VBoxContainer" parent="UI/VBoxContainer/Body" unique_id=1918588119]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="UI/VBoxContainer/Body/Labels" unique_id=556799823]
+layout_mode = 2
+text = "Fullscreen:"
+
+[node name="Label2" type="Label" parent="UI/VBoxContainer/Body/Labels" unique_id=1669864235]
+layout_mode = 2
+text = "Music volume: "
+
+[node name="Label3" type="Label" parent="UI/VBoxContainer/Body/Labels" unique_id=1165370801]
+layout_mode = 2
+text = "Music volume: "
+
+[node name="Fields" type="VBoxContainer" parent="UI/VBoxContainer/Body" unique_id=1950998431]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="Fullscreen" type="CheckBox" parent="UI/VBoxContainer/Body/Fields" unique_id=1552619779]
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="MusicVolume" type="HSlider" parent="UI/VBoxContainer/Body/Fields" unique_id=589888786]
+layout_mode = 2
+size_flags_vertical = 10
+max_value = 2.0
+step = 0.1
+value = 1.0
+
+[node name="SfxVolume" type="HSlider" parent="UI/VBoxContainer/Body/Fields" unique_id=1567872862]
+layout_mode = 2
+size_flags_vertical = 10
+max_value = 2.0
+step = 0.1
+value = 1.0
+
+[node name="Button" type="Button" parent="UI/VBoxContainer" unique_id=1637804571]
+layout_mode = 2
+text = "Main menu"

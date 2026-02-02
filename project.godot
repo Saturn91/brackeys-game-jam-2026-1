@@ -24,3 +24,4 @@ config/icon="res://icon.svg"
 [autoload]
 
 EnvUtils="*uid://c8u5mwwu2ph0y"
+UiUtils="*uid://cnka1nxygdrvx"

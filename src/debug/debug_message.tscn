@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://d38mwcnpe4vvq"]
+
+[ext_resource type="Script" uid="uid://bcmbmbspxgl73" path="res://src/debug/message.gd" id="1_05j8v"]
+[ext_resource type="Texture2D" uid="uid://dt2s0wsf5gqkh" path="res://resources/icons/information.png" id="2_g1y6i"]
+
+[node name="DebugMessage" type="ColorRect" unique_id=357189971]
+clip_contents = true
+custom_minimum_size = Vector2(500, 32)
+size_flags_horizontal = 0
+color = Color(6.617978e-08, 0.3471683, 8.1822276e-07, 1)
+script = ExtResource("1_05j8v")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1524208063]
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 32.0
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1348468404]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+texture = ExtResource("2_g1y6i")
+expand_mode = 4
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1668421701]
+layout_mode = 2
+text = "Something"
+
+[node name="ClearTimer" type="Timer" parent="." unique_id=1639238903]
+wait_time = 5.0
+one_shot = true
+autostart = true

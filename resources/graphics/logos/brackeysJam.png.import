@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://71wg0frxckhr"
-path="res://.godot/imported/brackeysJam.png-cdfc14f253bf373307dd97a1831ee282.ctex"
+path="res://.godot/imported/brackeysJam.png-40fb04d443b3735760f6fe595b6f373a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/logos/brackeysJam.png"
-dest_files=["res://.godot/imported/brackeysJam.png-cdfc14f253bf373307dd97a1831ee282.ctex"]
+source_file="res://resources/graphics/logos/brackeysJam.png"
+dest_files=["res://.godot/imported/brackeysJam.png-40fb04d443b3735760f6fe595b6f373a.ctex"]
 
 [params]
 

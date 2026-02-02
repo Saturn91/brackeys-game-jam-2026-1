@@ -29,12 +29,12 @@ resources -> files from external editors
 - [x] module loader
 	- [ ] intro (logos)
 	- [ ] main menu
-		- [ ] settings menu (fullscreen, music volume, sfx volume)
-		- [ ] credits
-	- [ ] game
+		- [x] settings menu (fullscreen, music volume, sfx volume)
+		- [x] credits
+	- [x] game
 - [ ] pause game implementation
 - [ ] level handling
-- [ ] setting save to file handler
+- [x] setting save to file handler
 - [ ] debug ui messages
 - [ ] debug ui properties (host / webhost)
 - [x] prepare webbuild export

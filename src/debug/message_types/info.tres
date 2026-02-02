@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DebugMessageType" format=3 uid="uid://d6j0wxuabqcu"]
+
+[ext_resource type="Texture2D" uid="uid://dt2s0wsf5gqkh" path="res://resources/icons/information.png" id="1_3fi4m"]
+[ext_resource type="Script" uid="uid://cw7oso4ag8ibf" path="res://src/debug/debug_message_type.gd" id="1_xg0iq"]
+
+[resource]
+script = ExtResource("1_xg0iq")
+icon = ExtResource("1_3fi4m")
+color = Color(0.20511743, 0.20511743, 0.20511743, 1)
+metadata/_custom_type_script = "uid://cw7oso4ag8ibf"

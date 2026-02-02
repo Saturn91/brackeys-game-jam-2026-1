@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="DebugMessageType" format=3 uid="uid://bx7b3xb2xgx04"]
+
+[ext_resource type="Script" uid="uid://cw7oso4ag8ibf" path="res://src/debug/debug_message_type.gd" id="1_1stmp"]
+[ext_resource type="Texture2D" uid="uid://b07x7ka5gymnh" path="res://resources/icons/exclamation.png" id="1_ywmpf"]
+
+[resource]
+script = ExtResource("1_1stmp")
+icon = ExtResource("1_ywmpf")
+color = Color(0.853214, 0.61524016, 0, 1)
+metadata/_custom_type_script = "uid://cw7oso4ag8ibf"

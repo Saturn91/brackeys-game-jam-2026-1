@@ -45,7 +45,7 @@ layout_mode = 2
 
 [node name="title" type="Label" parent="UI/DebugProperties/VBoxContainer" unique_id=644763937]
 layout_mode = 2
-text = "this is the debug menu, press CTRL + PERIOD to close"
+text = "this is the debug menu, press CTRL + PERIOD to toggle"
 
 [node name="FPSCounter" type="Label" parent="UI/DebugProperties/VBoxContainer" unique_id=717308387]
 layout_mode = 2

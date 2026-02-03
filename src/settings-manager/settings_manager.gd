@@ -17,6 +17,10 @@ func _ready() -> void:
 
 func set_fullscreen(value: bool) -> void:
 	fullscreen = value
+	if fullscreen:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
+	else:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
 	save_settings()
 
 func set_music_volume(value: float) -> void:

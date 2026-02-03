@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" format=3 uid="uid://dhw3pkd573myf"]
+
+[ext_resource type="Texture2D" uid="uid://da8jrhxxlfma" path="res://resources/graphics/ui-elements/button/button_rectangle_line.png" id="1_o7pjt"]
+
+[resource]
+texture = ExtResource("1_o7pjt")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+modulate_color = Color(0.39215687, 0, 0.9254902, 1)

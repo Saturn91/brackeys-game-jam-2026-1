@@ -1,0 +1,59 @@
+[gd_resource type="Theme" format=3 uid="uid://d0a3gnjaubqx"]
+
+[ext_resource type="FontFile" uid="uid://bb7awamkei25s" path="res://resources/graphics/fonts/SNPro-Black.ttf" id="1_0kq82"]
+[ext_resource type="StyleBox" uid="uid://cvrvxtkulxagb" path="res://resources/graphics/themes/main-theme/button_disabled_style.tres" id="2_cdulx"]
+[ext_resource type="StyleBox" uid="uid://clg2wgecopij8" path="res://resources/graphics/themes/main-theme/button_focus_style.tres" id="3_ekhxb"]
+[ext_resource type="StyleBox" uid="uid://dhw3pkd573myf" path="res://resources/graphics/themes/main-theme/button_default.tres" id="4_cqvge"]
+[ext_resource type="StyleBox" uid="uid://rj461ngpehoo" path="res://resources/graphics/themes/main-theme/button_pressed.tres" id="5_pd4pt"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_0kq82"]
+color = Color(0.39215687, 0, 0.9254902, 1)
+thickness = 8
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_cdulx"]
+color = Color(0.21568628, 0.019607844, 0.4627451, 1)
+thickness = 8
+
+[resource]
+Button/colors/font_color = Color(1, 0.78039217, 0.19607843, 1)
+Button/colors/font_disabled_color = Color(0.43985292, 0.32980356, 0, 1)
+Button/colors/font_focus_color = Color(1, 0.78039217, 0.19607843, 1)
+Button/colors/font_hover_color = Color(1, 0.78039217, 0.19607843, 1)
+Button/colors/font_hover_pressed_color = Color(1, 0.78039217, 0.19607843, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 0)
+Button/colors/font_pressed_color = Color(1, 0.78039217, 0.19607843, 1)
+Button/colors/icon_disabled_color = Color(1, 1, 1, 0.4)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Button/colors/icon_pressed_color = Color(1, 1, 1, 1)
+Button/constants/align_to_largest_stylebox = 0
+Button/constants/h_separation = 4
+Button/constants/icon_max_width = 0
+Button/constants/outline_size = 0
+Button/font_sizes/font_size = 32
+Button/fonts/font = ExtResource("1_0kq82")
+Button/icons/icon = null
+Button/styles/disabled = ExtResource("2_cdulx")
+Button/styles/focus = ExtResource("3_ekhxb")
+Button/styles/hover = ExtResource("3_ekhxb")
+Button/styles/normal = ExtResource("4_cqvge")
+Button/styles/pressed = ExtResource("5_pd4pt")
+CheckBox/colors/checkbox_checked_color = Color(1, 0.78039217, 0.19607843, 1)
+CheckBox/colors/checkbox_unchecked_color = Color(0.4392157, 0.32941177, 0, 1)
+CheckBox/styles/disabled = ExtResource("2_cdulx")
+CheckBox/styles/focus = ExtResource("3_ekhxb")
+CheckBox/styles/hover = ExtResource("3_ekhxb")
+CheckBox/styles/hover_pressed = ExtResource("5_pd4pt")
+CheckBox/styles/normal = ExtResource("4_cqvge")
+CheckBox/styles/pressed = ExtResource("5_pd4pt")
+HBoxContainer/constants/separation = 16
+HSlider/constants/center_grabber = 0
+HSlider/constants/grabber_offset = 0
+HSlider/constants/tick_offset = 0
+HSlider/styles/grabber_area = SubResource("StyleBoxLine_0kq82")
+HSlider/styles/slider = SubResource("StyleBoxLine_cdulx")
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_0kq82")
+VBoxContainer/constants/separation = 16

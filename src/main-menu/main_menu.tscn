@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_3mb8q"]
 [ext_resource type="Texture2D" uid="uid://71wg0frxckhr" path="res://resources/graphics/logos/brackeysJam.png" id="2_3ar5o"]
+[ext_resource type="Theme" uid="uid://d0a3gnjaubqx" path="res://resources/graphics/themes/main-theme/main_ui_theme.tres" id="2_gs0nq"]
 [ext_resource type="Script" uid="uid://dxe0vn5mloagj" path="res://src/main-menu/main_menu_controller.gd" id="2_qp1v6"]
 
 [node name="MainMenu" type="Node2D" unique_id=2143474246]
@@ -26,10 +27,12 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_gs0nq")
 alignment = 1
 script = ExtResource("2_qp1v6")
 
 [node name="PlayButton" type="Button" parent="ui/Root/MainControls" unique_id=651405487]
+texture_filter = 1
 layout_mode = 2
 text = "Play"
 

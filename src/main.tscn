@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://batjp8ux5d7vp" path="res://src/settings-menu/settings_menu.tres" id="6_kmhfv"]
 [ext_resource type="Resource" uid="uid://6uv2sleonprr" path="res://src/credits/credits.tres" id="7_5mrjc"]
 [ext_resource type="Resource" uid="uid://doia7y6nbfc0a" path="res://src/game/game.tres" id="7_rlaii"]
+[ext_resource type="Theme" uid="uid://bry4peyypr0hh" path="res://resources/graphics/themes/debug_theme.tres" id="10_kqbth"]
 [ext_resource type="Script" uid="uid://bc6k7x63oamaq" path="res://src/debug/debug-properties/fps_counter.gd" id="11_uewes"]
 
 [node name="Main" type="Node2D" unique_id=732130935]
@@ -35,6 +36,7 @@ metadata/_custom_type_script = "uid://capbdq5tj44gi"
 [node name="DebugProperties" type="MarginContainer" parent="UI" unique_id=609332777]
 offset_right = 40.0
 offset_bottom = 40.0
+theme = ExtResource("10_kqbth")
 theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_bottom = 8

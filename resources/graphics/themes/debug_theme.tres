@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://bry4peyypr0hh"]
+
+[ext_resource type="FontFile" uid="uid://bb7awamkei25s" path="res://resources/graphics/fonts/SNPro-Black.ttf" id="1_foq4l"]
+
+[resource]
+Label/fonts/font = ExtResource("1_foq4l")

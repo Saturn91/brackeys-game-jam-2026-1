@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://da0xnfi2i7ixy" path="res://src/module/module.gd" id="1_0dtj6"]
 [ext_resource type="Script" uid="uid://do5dkp7h1mhkf" path="res://src/settings-menu/settings_menu_controller.gd" id="2_yc5u7"]
+[ext_resource type="Theme" uid="uid://d0a3gnjaubqx" path="res://resources/graphics/themes/main-theme/main_ui_theme.tres" id="3_yc5u7"]
 
 [node name="SettingsMenu" type="Node2D" unique_id=1565746903]
 script = ExtResource("1_0dtj6")
@@ -20,6 +21,7 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("3_yc5u7")
 theme_override_constants/separation = 32
 alignment = 1
 

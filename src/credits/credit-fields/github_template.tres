@@ -6,4 +6,5 @@
 script = ExtResource("1_i6oak")
 label = "Github template"
 value = "saturn91.dev"
+link = "https://github.com/Saturn91/brackeys-game-jam-2026-1"
 metadata/_custom_type_script = "uid://cm6x2kltvah6f"

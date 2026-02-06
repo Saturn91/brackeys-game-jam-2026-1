@@ -6,4 +6,5 @@
 script = ExtResource("1_xjl6l")
 label = "menu image"
 value = "ansimuz"
+link = "https://ansimuz.com/"
 metadata/_custom_type_script = "uid://cm6x2kltvah6f"

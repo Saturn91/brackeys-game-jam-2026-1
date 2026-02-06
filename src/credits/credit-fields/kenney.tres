@@ -6,4 +6,5 @@
 script = ExtResource("1_f0jcp")
 label = "Icons"
 value = "Kenney"
+link = "https://www.kenney.nl/"
 metadata/_custom_type_script = "uid://cm6x2kltvah6f"

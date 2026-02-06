@@ -11,8 +11,14 @@ func _ready() -> void:
 	
 	for credit in credits:
 		var label_instance = Label.new()
-		var value_instance = Label.new()
-		
+		var value_instance
+		if credit.link.is_empty():
+			value_instance = Label.new()
+		else:
+			value_instance = LinkButton.new()
+			value_instance.underline = LinkButton.UNDERLINE_MODE_ON_HOVER
+			value_instance.uri = credit.link
+			
 		label_instance.text = credit.label + ":"
 		value_instance.text = credit.value
 		

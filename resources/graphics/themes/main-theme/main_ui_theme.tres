@@ -56,4 +56,7 @@ HSlider/styles/grabber_area = SubResource("StyleBoxLine_0kq82")
 HSlider/styles/slider = SubResource("StyleBoxLine_cdulx")
 Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_0kq82")
+LinkButton/colors/font_color = Color(1, 1, 1, 1)
+LinkButton/font_sizes/font_size = 24
+LinkButton/fonts/font = ExtResource("1_0kq82")
 VBoxContainer/constants/separation = 16

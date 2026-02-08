@@ -1,6 +1,5 @@
-class_name SettingsManager extends Node
-
-static var singleton: SettingsManager
+# global script, imported in Projects/Project Settings/Globals
+extends Node
 
 const SETTINGS_PATH := "user://settings.cfg"
 
@@ -12,7 +11,6 @@ var sfx_volume: float = 1.0:
 	set = set_sfx_volume
 
 func _ready() -> void:
-	singleton = self
 	load_settings()
 	apply_volumes()
 

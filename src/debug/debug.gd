@@ -1,3 +1,4 @@
+# global script, imported in Projects/Project Settings/Globals
 extends Node
 
 var message_parent: Control

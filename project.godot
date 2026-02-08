@@ -29,7 +29,6 @@ buses/default_bus_layout="uid://c023wda3o8tpq"
 
 EnvUtils="*uid://c8u5mwwu2ph0y"
 UiUtils="*uid://cnka1nxygdrvx"
-ControlledAudioUtil="*uid://boiijtgrrc8hr"
 Debug="*uid://bf8fle3x61p80"
 SettingsManager="*uid://wcvouw7dek2n"
 

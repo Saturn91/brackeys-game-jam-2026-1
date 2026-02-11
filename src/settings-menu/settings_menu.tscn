@@ -55,7 +55,7 @@ text = "Sfx volume: "
 
 [node name="Label4" type="Label" parent="UI/VBoxContainer/Body/Labels" unique_id=1195432059]
 layout_mode = 2
-text = "UI scale"
+text = "UI scale:"
 
 [node name="Fields" type="VBoxContainer" parent="UI/VBoxContainer/Body" unique_id=1950998431]
 custom_minimum_size = Vector2(75, 0)

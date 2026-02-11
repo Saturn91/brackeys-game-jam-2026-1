@@ -53,6 +53,10 @@ text = "Music volume: "
 layout_mode = 2
 text = "Sfx volume: "
 
+[node name="Label4" type="Label" parent="UI/VBoxContainer/Body/Labels" unique_id=1195432059]
+layout_mode = 2
+text = "UI scale"
+
 [node name="Fields" type="VBoxContainer" parent="UI/VBoxContainer/Body" unique_id=1950998431]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
@@ -74,6 +78,14 @@ value = 1.0
 [node name="SfxVolume" type="HSlider" parent="UI/VBoxContainer/Body/Fields" unique_id=1567872862]
 layout_mode = 2
 size_flags_vertical = 10
+max_value = 2.0
+step = 0.1
+value = 1.0
+
+[node name="UIScale" type="HSlider" parent="UI/VBoxContainer/Body/Fields" unique_id=202994180]
+layout_mode = 2
+size_flags_vertical = 10
+min_value = 0.5
 max_value = 2.0
 step = 0.1
 value = 1.0

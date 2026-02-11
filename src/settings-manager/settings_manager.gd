@@ -9,10 +9,13 @@ var music_volume: float = 1.0:
 	set = set_music_volume
 var sfx_volume: float = 1.0:
 	set = set_sfx_volume
+var ui_scale: float = 1.0:
+	set = set_ui_scale
 
 func _ready() -> void:
 	load_settings()
 	apply_volumes()
+	init_ui_scale()
 
 func get_volume_db(volume: float) -> float:
 	if volume <= 0.1:
@@ -25,6 +28,17 @@ func apply_volumes() -> void:
 	var sfx_bus = AudioServer.get_bus_index("SFX")
 	AudioServer.set_bus_volume_db(music_bus, get_volume_db(music_volume))
 	AudioServer.set_bus_volume_db(sfx_bus, get_volume_db(sfx_volume))
+
+func init_ui_scale() -> void:
+	var window: Window = get_window()
+	# CONTENT_SCALE_MODE_CANVAS_ITEMS is more performance-expensive, but much nicer looking
+	# CONTENT_SCALE_MODE_VIEWPORT is less performance-expensive, but makes it look much more pixelated
+	window.content_scale_mode = Window.CONTENT_SCALE_MODE_CANVAS_ITEMS
+	apply_ui_scale()
+
+func apply_ui_scale() -> void:
+	var window: Window = get_window()
+	window.content_scale_factor = ui_scale
 
 func set_fullscreen(value: bool) -> void:
 	fullscreen = value
@@ -42,6 +56,11 @@ func set_music_volume(value: float) -> void:
 func set_sfx_volume(value: float) -> void:
 	sfx_volume = value
 	apply_volumes()
+	save_settings()
+
+func set_ui_scale(value: float) -> void:
+	ui_scale = value
+	apply_ui_scale()
 	save_settings()
 
 func save_settings() -> void:

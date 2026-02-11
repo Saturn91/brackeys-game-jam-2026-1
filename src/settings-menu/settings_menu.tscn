@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://do5dkp7h1mhkf" path="res://src/settings-menu/settings_menu_controller.gd" id="2_yc5u7"]
 [ext_resource type="PackedScene" uid="uid://dp83k3rrysogj" path="res://src/ui/menu-background/menu_background.tscn" id="3_8ecug"]
 [ext_resource type="Theme" uid="uid://d0a3gnjaubqx" path="res://resources/graphics/themes/main-theme/main_ui_theme.tres" id="3_yc5u7"]
+[ext_resource type="Texture2D" uid="uid://cs4c4kiv76wdo" path="res://resources/icons/save.png" id="5_3cwkm"]
 
 [node name="SettingsMenu" type="Node2D" unique_id=1565746903]
 script = ExtResource("1_0dtj6")
@@ -53,9 +54,23 @@ text = "Music volume: "
 layout_mode = 2
 text = "Sfx volume: "
 
-[node name="Label4" type="Label" parent="UI/VBoxContainer/Body/Labels" unique_id=1195432059]
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/VBoxContainer/Body/Labels" unique_id=1737408093]
+layout_mode = 2
+
+[node name="Label4" type="Label" parent="UI/VBoxContainer/Body/Labels/HBoxContainer" unique_id=1195432059]
 layout_mode = 2
 text = "UI scale:"
+
+[node name="SaveUIScaleButton" type="TextureButton" parent="UI/VBoxContainer/Body/Labels/HBoxContainer" unique_id=1748918193]
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("5_3cwkm")
+texture_pressed = ExtResource("5_3cwkm")
+texture_hover = ExtResource("5_3cwkm")
+texture_disabled = ExtResource("5_3cwkm")
+texture_focused = ExtResource("5_3cwkm")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="Fields" type="VBoxContainer" parent="UI/VBoxContainer/Body" unique_id=1950998431]
 custom_minimum_size = Vector2(75, 0)

@@ -5,6 +5,7 @@ class_name SettingsMenuController extends Node
 @onready var sfx_slider: Slider = $"../UI/VBoxContainer/Body/Fields/SfxVolume"
 @onready var ui_slider: Slider = $"../UI/VBoxContainer/Body/Fields/UIScale"
 @onready var reset_settings_button: Button = $"../UI/VBoxContainer/ResetSettingsButton"
+@onready var save_ui_scale_button: TextureButton = $"../UI/VBoxContainer/Body/Labels/HBoxContainer/SaveUIScaleButton"
 @onready var main_menu_btn: Button = $"../UI/VBoxContainer/Button"
 
 func _ready() -> void:
@@ -28,6 +29,7 @@ func _ready() -> void:
 	ui_slider.drag_ended.connect(func(value_changed: float): 
 		if value_changed:
 			SettingsManager.ui_scale = ui_slider.value
+			save_ui_scale_button.visible = true
 	)
 	
 	reset_settings_button.button_up.connect(func():
@@ -35,6 +37,13 @@ func _ready() -> void:
 		SettingsManager.reset_settings()
 		reset_ui()
 	)
+	
+	save_ui_scale_button.button_up.connect(func():
+		save_ui_scale_button.visible = false
+		GlobalSound.singleton.play("UiPlop")
+		SettingsManager.save_all_settings()
+	)
+	save_ui_scale_button.visible = false
 	
 	UiUtils.connect_button_to_scene_load(main_menu_btn, load("res://src/main-menu/main_menu.tres"))
 

@@ -66,15 +66,30 @@ func set_sfx_volume(value: float) -> void:
 func set_ui_scale(value: float) -> void:
 	ui_scale = value
 	apply_ui_scale()
-	save_settings()
+	# save_settings() We don't save this directly, instead use a save button, to allow resetting 
+	# when by restarting the game
 
+## Saves all settings, including UI-scale.
+##
+## See [method save_settings].
+func save_all_settings() -> void:
+	_save_settings_to_file(true)
+
+## Saves all settings except UI-scale, as setting a wrong UI-scale can possibly prevent
+## changing it back.
+## 
+## Use [method save_all_settings] to save everything including UI-scale
 func save_settings() -> void:
+	_save_settings_to_file(false)
+	
+func _save_settings_to_file(with_ui: bool) -> void:
 	var config := ConfigFile.new()
 
 	config.set_value("video", "fullscreen", fullscreen)
 	config.set_value("audio", "music_volume", music_volume)
 	config.set_value("audio", "sfx_volume", sfx_volume)
-	config.set_value("ui", "ui_scale", ui_scale)
+	if with_ui:
+		config.set_value("ui", "ui_scale", ui_scale)
 
 	var err = config.save(SETTINGS_PATH)
 	if err != OK:
@@ -85,7 +100,7 @@ func load_settings():
 	var err = config.load(SETTINGS_PATH)
 
 	if err != OK:
-		save_settings()
+		save_all_settings()
 		return
 
 	fullscreen = config.get_value("video", "fullscreen", fullscreen)
@@ -101,4 +116,4 @@ func reset_settings() -> void:
 	ui_scale = default_ui_scale
 	apply_volumes()
 	apply_ui_scale()
-	save_settings()
+	save_all_settings()

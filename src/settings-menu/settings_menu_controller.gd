@@ -5,7 +5,7 @@ class_name SettingsMenuController extends Node
 @onready var sfx_slider: Slider = $"../UI/VBoxContainer/Body/Fields/SfxVolume"
 @onready var ui_slider: Slider = $"../UI/VBoxContainer/Body/Fields/UIScale"
 @onready var reset_settings_button: Button = $"../UI/VBoxContainer/ResetSettingsButton"
-@onready var save_ui_scale_button: TextureButton = $"../UI/VBoxContainer/Body/Labels/HBoxContainer/SaveUIScaleButton"
+@onready var save_ui_scale_button: Button = $"../UI/VBoxContainer/Body/Labels/HBoxContainer/SaveUIScaleButton"
 @onready var main_menu_btn: Button = $"../UI/VBoxContainer/Button"
 
 func _ready() -> void:

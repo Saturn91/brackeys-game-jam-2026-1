@@ -100,3 +100,7 @@ layout_mode = 2
 text = "Main menu"
 
 [node name="UI_Scale_Change_Dialog" parent="UI" unique_id=66073116 instance=ExtResource("5_3cwkm")]
+
+[node name="Timer" type="Timer" parent="UI/UI_Scale_Change_Dialog" unique_id=304372101]
+wait_time = 10.0
+one_shot = true

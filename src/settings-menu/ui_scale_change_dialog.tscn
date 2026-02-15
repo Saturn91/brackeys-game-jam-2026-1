@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cbuk432gk7jo4"]
+
+[ext_resource type="Theme" uid="uid://d0a3gnjaubqx" path="res://resources/graphics/themes/main-theme/main_ui_theme.tres" id="1_iq1pr"]
+
+[node name="UIScaleChangeDialog" type="ConfirmationDialog" unique_id=66073116]
+oversampling_override = 1.0
+initial_position = 2
+size = Vector2i(626, 148)
+always_on_top = true
+popup_window = true
+popup_wm_hint = true
+theme = ExtResource("1_iq1pr")
+ok_button_text = "Save"
+dialog_text = "UI scale changed.
+Do you want to save this setting?"
+cancel_button_text = "Reset"
